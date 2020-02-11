@@ -1,0 +1,32 @@
+<svg width="300" height="150" style="display:block;" viewBox="0 -10 100 100"  xmlns="http://www.w3.org/2000/svg">
+  	<g fill="none" stroke="white">
+  	<!-- <path d="M20 20 L-20 10 M17 25 L-20 80" stroke-dasharray="5 1 8"/> -->
+  	<circle cx="20" cy="20" r="2" stroke="yellow"/>
+  	<circle cx="-20" cy="10" r="2" stroke="yellow"/>
+  	<circle cx="-20" cy="80" r="2" stroke="yellow"/>
+  	<!-- <path d="M90 50 h10" stroke="white"/> -->
+  	<circle cx="95" cy="50" r="2" stroke="yellow"/>
+  	<!-- <path d="M82 88 h10" stroke="white"/> -->
+  	<circle cx="70" cy="15" r="2" stroke="yellow"/>
+  </g>
+  <!-- <path d="M57 60 l10 8 v10 h-34 v-10 L43 60" stroke="black" fill="none" stroke-linejoin="round"/> -->
+  <!-- <path d="M27.5 75 q22 -20 45 0" stroke="black" fill="none" id="mouth" stroke-linecap="round"/> -->
+  <path d="M47.5 55 q3 5 6 0z" stroke="yellow" stroke-linejoin="round"/>
+  <ellipse cx="50%" cy="50%" rx="11" ry="13" stroke="black" fill="none"/>
+  <g style="stroke:black;fill:none;stroke-linecap:round;">
+    <path d="M50 43 C63 1, 36 32, 39 4" id="hair">
+      <animate attributeName="d" restart="whenNotActive" values="M50 43 C63 1, 36 32, 39 4;M50 43 C63 1, 36 32, 34 4;M50 43 C63 1, 36 32, 39 4" begin="0;aa1.end+2s" dur="5s"/>
+    </path>
+    <use href="#hair" transform="translate(2,0)"/>
+    <use href="#hair" transform="translate(-2,0)"/>
+    </g>
+
+  <g id="eye">
+  <circle cx="60%" cy="45%" r="5" stroke="yellow"/>
+	<circle cx="40%" cy="45%" r="5" stroke="yellow"/>
+	<g style="pointer-events:none">
+	<ellipse cx="42%" cy="46%" rx="1.8" ry="2" fill="white"><animate id="aa" attributeName="ry" restart="whenNotActive" values="2;1;0;1;2" begin="5s;eye.mouseover;aa.end+8s"  dur="1s"/></ellipse>
+	<ellipse cx="58%" cy="46%" rx="1.8" ry="2" fill="white"><animate id="aa1" attributeName="ry" restart="whenNotActive" values="2;1;0;1;2" begin="5s;eye.mouseover;aa1.end+8s"  dur="1s"/></ellipse>
+	</g>
+	</g>
+</svg>

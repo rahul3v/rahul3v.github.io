@@ -1,9 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comming Up</title>
+	<title>Github - @rahul3v</title>
+	<meta charset="urf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="canonical" href="https://github.rahul3v.xyz/"/>
+  	<meta property="og:title" content="Github - @rahul3v"/>
+  	<meta property="description" content="All my open github projects mini-details at one place - @rahul3v"/>
+	<meta property="og:locale" content="en_US"/>
+	<link rel="icon" type="image/png" href="images/me.png">
+	<script type="application/ld+json">
+	{"@type":"WebSite","url":"https://github.rahul3v.xyz/","name":"Github - @rahul3v","headline":"Github - @rahul3v","description":"All my open github projects mini-details at one place - @rahul3v","logo": "https://github.rahul3v.xyz/images/me.png","@context":"https://schema.org"}</script>
+<style type="text/css">
+*{box-sizing:border-box;}
+html{touch-action:manipulation;-webkit-tap-highlight-color:transparent;scrollbar-width:thin;}
+::-webkit-scrollbar{ width:6px;}
+::-webkit-scrollbar-thumb{background-color: #d2d2d2;}
+::-webkit-scrollbar-thumb:active{background-color:#8a8989;}
+::-webkit-scrollbar-thumb:hover{background-color:#8a8989;}
+::-webkit-scrollbar-track{background-color: #ececec;}
+body{margin: 0;font-family:arial,sans-serif;color: #1f1f1f;scroll-behavior:smooth;height:100vh;
+	background:linear-gradient(-35deg,#36AC91 2%,transparent 94%),linear-gradient(0deg,#FB84BC 2%,transparent 94%),url('images/me6.jpg');
+	background-attachment:fixed;background-repeat:no-repeat;
+	background-size:cover;background-position:center;
+	padding:5% 5% 0% 5%;
+	padding-top:10vh;
+	height:100%;
+	user-select:none;
+	-moz-user-select:none;
+	overflow:hidden;
+	transition:0.4s
+}
+.projects, body,.card,.notebox,.links{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;}
+.projects{justify-content:start;align-items:initial;}
+.card{
+	--margin:20px;
+	position:relative;
+	/*flex-direction:column;*/
+	font-size: 20px;
+	background-color:rgba(255,255,255,0.8);
+	width:calc(25vw - var(--margin)*4);
+	min-width: calc(280px - var(--margin)*2);
+	margin:var(--margin);
+	padding:10px;
+	cursor:pointer;
+	min-height:300px;
+	border-radius:5px;
+	/*box-shadow:0 -1px 4px -2px rgba(0,0,0,0.4),0 10px 20px -15px black;*/
+	box-shadow:0 0 4px -2px rgba(0,0,0,0.4);
+	transition:all 0.3s;
+	/*border-left: 8px solid aquamarine;*/
+}
+.card:hover{
+	box-shadow:0 -1px 4px -2px rgba(0,0,0,0.4),0 16px 16px -8px rgba(0,0,0,0.4);
+}
+.card::after{/*content:'';*/position:absolute;width:10vw;height:10vw;border-radius: 6% 34% 13% 24% /16% 45% 62% 36%;z-index: -1;box-shadow: 0 0 4pxrgba(0,0,0,0.4);left:-18px;bottom:18px;background: #b7f4c1;}
+.disable{;cursor:default;text-align: center;/*pointer-events:none*/}
+.disable:hover{box-shadow:0 0 4px -2px rgba(0,0,0,0.4);}
+.box{box-shadow:0 0 4px rgba(0,0,0,0.4);margin:20px;box-shadow:none;background-color:rgba(255,255,255,0);width:100%;margin:35px 0;min-height:200px;text-align:left;}
+.hover::before{position: absolute;content: "";width: 100%;clip-path: inset(0px 50% 0px 0px);height: 20px;bottom: -5px;border-radius: 5px;background: black;transition: clip-path 0.3s ease 0s;}
+.hover:hover::before{clip-path: inset(0px);transition: clip-path 0.3s ease 0s;}
+.rightfix{position:fixed;bottom:40px;right:8vw;width:80px;height:80px;box-shadow:0 0 4px rgba(0,0,0,0.4);border-radius:50%;background-color:#f2f2f2;display: flex;justify-content: center;align-items: center;cursor: pointer;z-index:15;}
+.rightfix::before,.rightfix::after{content:'';display:flex;height:50%;width: 21px;border: 2px solid black;border-radius: 6px;}
+.rightfix::before{position:absolute;height: 30px;width: 48%;bottom: 14px;background:#fff;;}
+.pulse{animation: pulse 1.2s ease infinite;background: #ff3466;position: absolute;width: 80px;height: 80px;border-radius: 100%;z-index:-1;}
+@keyframes pulse{
+  0% {transform: scale(1, 1);}
+  50% {opacity: 0.4;}
+  100% {transform: scale(1.5);opacity: 0;}
+}
+body:target{overflow:initial;background:url('images/dud.svg');background-repeat:no-repeat;background-attachment:scroll;background-color:white;background-size:2500px;background-position:center 16vh;}
+body:target .rightfix,body:target .pulse{animation:initial;display:none;}
+body:target .container{/*background-image: url('github.png'),radial-gradient(circle at 8% 79%, gold 25px, transparent 4px),radial-gradient(circle at 8% 70%,#4deec8 65px, transparent 4px), radial-gradient(circle at 15% 35%, black 35px, transparent 4px);border-left: 12px double;*/}
+.container{position:relative;width:94%;background-color:transparent;height:105vh;background-repeat:no-repeat;background-position:center;text-shadow: 0 0 4px rgba(0,0,0,0.6);}
+.open{visibility: hidden;opacity:0;position:absolute;background-color:#fff;width:0%;height:0%;transition:all 0.6s;padding:10px;}
+	h1{font-size:48px;line-height:100px;position:relative;display:inline-block;cursor:default;}
+	a{text-decoration:none;color:black;transition:0.3s;cursor:pointer;}
+	a:hover{color:white}
+	p{font-size:24px;text-shadow:none;}
+.projects img{width:84%}
+	h2{font-size:32px;}
+	h3{font-size:18px;margin:0;}
+	a h1{cursor:pointer;}
+	span{display:none;}
+
+.mee{position:absolute;bottom:68px;left:20px;width: 50px;padding: 4px;background:#fff;border-radius: 50%;height: 50px;overflow: hidden;opacity: 0.4;transition:opacity 0.4s;box-shadow: 0 0 6px rgba(0,0,0,0.8);}
+.gitlink{left:100px;background-color:#708090;padding-top: 8px;}
+.mee img,.mee1 img{width:100%;}
+.mee:hover,.mee1:hover{opacity:1;}
+.mee1{position: absolute;top: 20px;right: 0px;top: 30px;right: 15px;width: 50px;padding: 4px;background:#fff;border-radius: 50%;height: 50px;overflow: hidden;opacity: 0.2;transition:opacity 0.3s;box-shadow: 0 0 6px rgba(0,0,0,0.8);}
+.gitlink1{top: -36px;right: 54px;top: -25px;right: -8px;width: 40px;height: 40px;background-color:#708090;padding-top: 8px;}
+#support_link{overflow:hidden;border-radius:50%;width:80px;height:80px;box-shadow:0 0 04px rgba(255, 0, 0, 0.4);cursor:pointer;margin:5px;transform:scale(.95)}
+#support_link:hover{transform:scale(1)}
+	</style>
 </head>
-<body>
-Comming Up very soon...!
+<body id="unlock">
+<div class="box"><h1 class="hover">Github Projects</h1></div>
+<div class="container" style="text-align:right;">
+	<h1 style="font-size:300px;line-height:0" id="project_count">14</h1>
+	<a class="rightfix" href="#unlock" title="Click to unlock"><div class="pulse"></div></a>
+	<div class="mee1"><a href="https://rahul3v.xyz"><img src="images/me.png"></a></div>
+	<div class="mee1 gitlink1"><a href="https://github.com/rahul3v"><img src="images/github.png"></a></div>
+</div>
+<div class="projects" id="my_projects">
+	<div class="card" onclick="details(this)">
+		<span title="Flower Pattern" data-code="flower_pattern">Genrate a custom Flower pattern and download the same, inspired from SUNFLOWER</span>
+		<img src="images/flower_pattern.png"><h3>Flower Pattern</h3>
+	</div>
+	<div class="card" onclick="details(this)">
+		<span title="Image Filter" data-code="image_filter">Filtering any of your image with beautiful CSS Layout</span>
+		<img src="images/image_filter.png"><h3>Image Filter</h3>
+	</div>
+	<div class="card" onclick="details(this)">
+		<span title="Memory Grid" data-code="memory_grid">You can play a simple memory game made with CSS GRID layout</span>
+		<img src="images/memory_grid.png"><h3>Memory Grid</h3>
+	</div>
+	<div class="card" onclick="details(this)">
+		<span title="Magic Matrix" data-code="magic_matrix">You can genrate the custom Magic Matrix of any odd matrix</span>
+		<img src="images/magic_matrix.png"><h3>Magic Matrix</h3>
+	</div>
+	<div class="card disable"><h3>More update Soon..!</h3></div>
+</div>
+<div class="box" style="margin-bottom:0;color:black;position:relative;text-align:right;">
+	<h1 class="hover">- rahul3v</h1>
+	<div class="mee"><a href="https://rahul3v.xyz"><img src="images/me.png"></a></div>
+	<div class="mee gitlink"><a href="https://github.com/rahul3v"><img src="images/github.png"></a></div>
+</div>
+<style type="text/css">
+.note {padding:10px;position:fixed;text-align:center;min-height:260px;width:60vw;box-shadow:0 4px 4px rgba(0,0,0,0.4),0 0 34px rgba(0,0,0,0.8);left:50%;top:50%;transform:translate(-50%,-50%);border-top:6px solid black;z-index:2;color:white;background-color:black;}
+.closebtn {position: absolute;top:20px;right:35px;font-size:54px;cursor:pointer;display:none;}
+.note h1{margin:0;text-align:right;font-size:3.5vw;line-height:7.5vw;text-shadow:none;max-width:80%}
+.note p{font-size:2.15vmax;text-shadow:none;}
+.notebox{position:absolute;left:0;top:0;z-index:1;background-color:#fff;box-shadow:6px 6px 0px rgba(0,0,0,1);width:14vw;height:14vw;min-width:85px;min-height:85px;transform:translate(-25%, -38%);border-radius:10px;padding:10px;}
+.links a{font-size:20px;color:#14ffc8 /*deeppink*/;margin:5px 25px;padding:5px 10px;}
+.links a:hover{color:white;}
+.closebtn:hover{opacity:1}
+.note img{min-height:50px;max-height:200px;max-width:100%;}
+.darkbox{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;background-color:rgba(0,0,0,0.4);visibility:hidden;opacity: 0.5;transition: .4s;}
+.darkbox:hover .closebtn{display:block;}
+</style>
+<div class="darkbox" id="mynote">
+<a class="closebtn" onclick="this.parentElement.style='visibility:hidden;opacity:0';">&times;</a>
+<div class="note">
+  <div class="notebox"><img id="notebox_img" src="github.png"></div>
+  <h1 id="topic">Total ===</h1><hr style="border:1px solid black">
+  <img id="topic_image" src="github.png" alt="rahul3v projects">
+  <p id="topic_content">Total public projects till date</p>
+  <div class="links"><a id="link_code" href="#" target="_blank">Source Code</a> <a id="link_demo" target="_blank" href="#">Demo</a></div>
+</div>
+</div>
+<script type="text/javascript">
+	project_count.textContent=my_projects.childElementCount-1;
+	var demo_urls=["https://rahul3v.xyz/github/",'https://www.youtube.com/watch?v='];
+	function details(e){
+		var el=e.firstElementChild;
+		notebox_img.src=e.children[1].src;
+		topic.textContent=topic_image.alt=el.title;
+		topic_content.textContent=el.textContent;
+		topic_image.src='images/'+(el.dataset.image?"github.png":"im_"+el.dataset.code+".jpg");
+		link_code.href="https://github.com/rahul3v/"+el.dataset.code||'#';
+		if(el.dataset.url=='1')el.dataset.code=el.dataset.link;
+		link_demo.href=demo_urls[(el.dataset.url||'0')]+el.dataset.code||'#';
+		mynote.style="visibility:visible;opacity:1";
+	}
+</script>
 </body>
 </html>
